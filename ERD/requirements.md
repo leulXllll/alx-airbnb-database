@@ -7,4 +7,4 @@ Relationships -Users can own many properties,
               -A property could have more than one review
               
 
-![First normal form ER](1-NF-ER.png)
+![First normal Form ER](../Images/1-NF-ER.png)
