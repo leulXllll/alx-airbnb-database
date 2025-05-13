@@ -35,7 +35,7 @@
         
         booking_id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
         property_id UUID NOT NULL,
-        user_id UUID NOT NULL,
+        guest_id UUID NOT NULL,
         start_date DATE NOT NULL,
         end_date DATE NOT NULL,
         total_price DECIMAL(10,2) NOT NULL,
@@ -43,7 +43,7 @@
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 
         CONSTRAINT fk_user 
-        FOREIGN KEY (user_id) REFERENCES Users(user_id)
+        FOREIGN KEY (guest_id) REFERENCES Users(user_id)
         ON DELETE CASCADE 
         ON UPDATE CASCADE,
 
