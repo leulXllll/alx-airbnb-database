@@ -15,7 +15,7 @@
     );
 
     CREATE TABLE Properties(
-        property_id UUID PRIMARY KEY  DEFAULT gen_random_uuid()NOT NULL,
+        property_id UUID PRIMARY KEY  DEFAULT gen_random_uuid() NOT NULL,
         host_id UUID NOT NULL,
         name VARCHAR(255) NOT NULL,
         description TEXT  NOT NULL,
