@@ -1,0 +1,1 @@
+Leveraging the power of indexes is a great way for query optimization
